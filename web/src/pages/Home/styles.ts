@@ -62,7 +62,7 @@ export const CreateAccount = styled(Link)`
   border-radius: 4px;
 
   &:focus {
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+    color: ${(props) => props.theme['gray-800']};
   }
 `
 
@@ -123,4 +123,9 @@ export const Button = styled.button`
 
   cursor: pointer;
   padding: 0 1rem;
+
+  &:focus {
+    background: ${(props) => props.theme['light-green']};
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+  }
 `
